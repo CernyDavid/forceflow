@@ -4,17 +4,16 @@ using UnityEngine;
 
 public class BulletBehaviour : MonoBehaviour
 {
-    public float attractionForce = 10f;
-    private GameObject centerOfGravity;
-    private Vector3 target;
-    private bool hasHit = false;
+    protected GameObject centerOfGravity;
+    protected Vector3 target;
+    protected bool hasHit = false;
 
     public void SetTarget(Vector3 newTarget)
     {
         target = newTarget;
     }
 
-    private void Update()
+    void Update()
     {
         if (!hasHit)
         {
@@ -62,12 +61,8 @@ public class BulletBehaviour : MonoBehaviour
         }
     }
 
-    void ApplyForce(GameObject obj)
+    protected virtual void ApplyForce(GameObject obj)
     {
-        if (obj != centerOfGravity)
-        {
-            Vector3 forceDirection = (centerOfGravity.transform.position - obj.transform.position).normalized;
-            obj.GetComponent<Rigidbody>().AddForce(forceDirection * attractionForce);
-        }
+
     }
 }
