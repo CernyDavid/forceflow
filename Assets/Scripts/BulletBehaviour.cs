@@ -37,14 +37,9 @@ public class BulletBehaviour : MonoBehaviour
             transform.position = contact.point;
 
             Rigidbody bulletRigidbody = gameObject.GetComponent<Rigidbody>();
-            if (bulletRigidbody != null && !collision.gameObject.CompareTag("Player"))
-            {
-                bulletRigidbody.isKinematic = true;
-                centerOfGravity = gameObject;
-            }
-            else {
-                Destroy(gameObject);
-            }
+            bulletRigidbody.isKinematic = true;
+            centerOfGravity = gameObject;
+            print("Bullet hit " + collision.gameObject.name);
         }
     }
 

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -226,7 +226,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 862413376}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GunTip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -242,7 +242,7 @@ Transform:
   m_GameObject: {fileID: 862413375}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0.512}
+  m_LocalPosition: {x: -0, y: 0, z: 0.5085}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -469,7 +469,7 @@ GameObject:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -620,7 +620,7 @@ GameObject:
   - component: {fileID: 1193442540}
   - component: {fileID: 1193442539}
   - component: {fileID: 1193442538}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -727,7 +727,7 @@ GameObject:
   - component: {fileID: 1210993807}
   - component: {fileID: 1210993806}
   - component: {fileID: 1210993809}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -813,6 +813,8 @@ MonoBehaviour:
   bulletPrefab2: {fileID: 442365912506266736, guid: 472d3c00020255a4cbd470ce09274c77, type: 3}
   bulletSpeed: 50
   maxRaycastDistance: 50
+  attractiveBulletsAmmo: 10
+  repulsiveBulletsAmmo: 5
 --- !u!1 &1646812920
 GameObject:
   m_ObjectHideFlags: 0
@@ -824,7 +826,7 @@ GameObject:
   - component: {fileID: 1646812921}
   - component: {fileID: 1646812924}
   - component: {fileID: 1646812923}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Weapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}

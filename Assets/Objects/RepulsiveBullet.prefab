@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 273330550307582305}
   - component: {fileID: 79186331167572358}
   - component: {fileID: -1850689126387383519}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RepulsiveBullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
