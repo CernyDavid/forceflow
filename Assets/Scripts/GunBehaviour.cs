@@ -5,6 +5,7 @@ using UnityEngine;
 public class GunBehaviour : MonoBehaviour
 {
     public Transform gunTransform;
+    public Transform gunPoint;
     public GameObject bulletPrefab1;
     public GameObject bulletPrefab2;
     public float bulletSpeed = 50f;
