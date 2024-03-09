@@ -4,14 +4,15 @@ using UnityEngine;
 
 public class GunBehaviour : MonoBehaviour
 {
+    public Camera fpsCam;
     public Transform gunTransform;
-    public Transform gunPoint;
+    //public Transform gunPoint;
     public GameObject bulletPrefab1;
     public GameObject bulletPrefab2;
     public float bulletSpeed = 50f;
-    public float maxRaycastDistance = 50f;
+    public float maxRaycastDistance = 100f;
     public int attractiveBulletsAmmo = 10;
-    public int repulsiveBulletsAmmo = 5;
+    public int repulsiveBulletsAmmo = 10;
 
     //1 = attractive, 2 = repulsive
     private int bulletType = 1;

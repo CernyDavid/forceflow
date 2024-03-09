@@ -717,7 +717,6 @@ GameObject:
   - component: {fileID: 1210993808}
   - component: {fileID: 1210993807}
   - component: {fileID: 1210993806}
-  - component: {fileID: 1210993809}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -740,7 +739,7 @@ MonoBehaviour:
   controller: {fileID: 1210993807}
   walkSpeed: 10
   runSpeed: 16
-  jumpForce: 7
+  jumpHeight: 3
   gravity: -20
 --- !u!143 &1210993807
 CharacterController:
@@ -785,26 +784,6 @@ Transform:
   - {fileID: 963194228}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1210993809
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1210993805}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 539968378064500478dd6fb949635f5f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gunTransform: {fileID: 862413376}
-  gunPoint: {fileID: 862413376}
-  bulletPrefab1: {fileID: 3285676475998396694, guid: 75b574195f32eab41844742f0958b4a1, type: 3}
-  bulletPrefab2: {fileID: 8494142764187096278, guid: 472d3c00020255a4cbd470ce09274c77, type: 3}
-  bulletSpeed: 10
-  maxRaycastDistance: 50
-  attractiveBulletsAmmo: 10
-  repulsiveBulletsAmmo: 5
 --- !u!1 &1646812920
 GameObject:
   m_ObjectHideFlags: 0
@@ -816,6 +795,7 @@ GameObject:
   - component: {fileID: 1646812921}
   - component: {fileID: 1646812924}
   - component: {fileID: 1646812923}
+  - component: {fileID: 1646812925}
   m_Layer: 3
   m_Name: Weapon
   m_TagString: Untagged
@@ -889,6 +869,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1646812920}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1646812925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1646812920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 539968378064500478dd6fb949635f5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fpsCam: {fileID: 963194227}
+  gunTransform: {fileID: 1646812921}
+  bulletPrefab1: {fileID: 3285676475998396694, guid: 75b574195f32eab41844742f0958b4a1, type: 3}
+  bulletPrefab2: {fileID: 8494142764187096278, guid: 472d3c00020255a4cbd470ce09274c77, type: 3}
+  bulletSpeed: 50
+  maxRaycastDistance: 100
+  attractiveBulletsAmmo: 50
+  repulsiveBulletsAmmo: 50
 --- !u!1001 &2134192318
 PrefabInstance:
   m_ObjectHideFlags: 0
