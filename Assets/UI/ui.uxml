@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement style="flex-grow: 1;">
+        <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="AttractiveBullets" style="height: 50px; position: absolute; top: 28px; right: 28px; font-size: 40px; -unity-font-style: bold; width: 110px;" />
+        <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="RepulsiveBullets" style="height: 50px; position: absolute; top: 28px; right: 160px; font-size: 40px; -unity-font-style: bold; width: 110px;" />
+    </ui:VisualElement>
+</ui:UXML>

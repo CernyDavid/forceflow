@@ -23,13 +23,13 @@ public class GunBehaviour : MonoBehaviour
         {
             if (bulletType == 1 && attractiveBulletsAmmo > 0)
             {
-                Shoot();
                 attractiveBulletsAmmo--;
+                Shoot();
             }
             else if (bulletType == 2 && repulsiveBulletsAmmo > 0)
             {
-                Shoot();
                 repulsiveBulletsAmmo--;
+                Shoot();
             }
         }
 
@@ -65,5 +65,7 @@ public class GunBehaviour : MonoBehaviour
         {
             bb.SetTarget(target);
         }
+
+        GameObject.FindGameObjectWithTag("UI").GetComponent<UI>().UpdateBulletCount();
     }
 }

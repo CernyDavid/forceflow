@@ -6,6 +6,7 @@ TagManager:
   tags:
   - MovableObject
   - MapObject
+  - UI
   layers:
   - Default
   - TransparentFX
