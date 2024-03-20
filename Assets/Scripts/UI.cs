@@ -30,6 +30,5 @@ public class UI : MonoBehaviour
         GunBehaviour gb = player.GetComponentInChildren<GunBehaviour>();
         AttractiveBullets.text = gb.attractiveBulletsAmmo.ToString();
         RepulsiveBullets.text = gb.repulsiveBulletsAmmo.ToString();
-        print(gb.attractiveBulletsAmmo);
     }
 }
