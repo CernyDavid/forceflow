@@ -13,7 +13,7 @@ public class BulletBehaviour : MonoBehaviour
         target = newTarget;
     }
 
-    void Update()
+    protected virtual void Update()
     {
         if (!hasHit)
         {
@@ -28,7 +28,7 @@ public class BulletBehaviour : MonoBehaviour
         transform.position = Vector3.MoveTowards(transform.position, target, step);
     }
 
-    private void OnCollisionEnter(Collision collision)
+    protected virtual void OnCollisionEnter(Collision collision)
     {
         if (!hasHit)
         {

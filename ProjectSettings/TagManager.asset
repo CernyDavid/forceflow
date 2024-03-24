@@ -7,6 +7,8 @@ TagManager:
   - MovableObject
   - MapObject
   - UI
+  - RepulsiveBullet
+  - AttractiveBullet
   layers:
   - Default
   - TransparentFX
