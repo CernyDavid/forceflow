@@ -140,5 +140,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attractionForce: 15
-  attractionRange: 10
+  attractionRange: 15
   indicatorMaterial: {fileID: 2100000, guid: b24720a96750cb046937294b14dd672a, type: 2}

@@ -140,5 +140,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   repulsionForce: 15
-  repulsionRange: 10
+  repulsionRange: 15
   indicatorMaterial: {fileID: 2100000, guid: 3d648c4707895084280ce3874bd76896, type: 2}
