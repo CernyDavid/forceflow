@@ -435,6 +435,10 @@ PrefabInstance:
       propertyPath: m_ReceiveShadows
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 92d21619c113879409abb56de3fc005b, type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: fb514470584ef3544b801d1bb41ec153, type: 2}
     - target: {fileID: 919132149155446097, guid: 92d21619c113879409abb56de3fc005b, type: 3}
       propertyPath: m_Name
       value: Weapon
@@ -480,3 +484,6 @@ MonoBehaviour:
   maxRaycastDistance: 100
   attractiveBulletsAmmo: 5
   repulsiveBulletsAmmo: 5
+  displayBlueMaterial: {fileID: 2100000, guid: fb514470584ef3544b801d1bb41ec153, type: 2}
+  displayRedMaterial: {fileID: 2100000, guid: 59bebe0a9a38b8c4b8108baf24f4118a, type: 2}
+  materialIndex: 2

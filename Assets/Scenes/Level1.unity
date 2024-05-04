@@ -211,7 +211,7 @@ Transform:
   m_GameObject: {fileID: 4390099}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.78, y: 25.06, z: 0.42}
+  m_LocalPosition: {x: -6.78, y: 19.38, z: 0.42}
   m_LocalScale: {x: 1, y: 1.9351, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -696,8 +696,8 @@ Transform:
   m_GameObject: {fileID: 656459941}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.274, y: 10.4148, z: -8.52}
-  m_LocalScale: {x: 4.6491895, y: 11.972603, z: 9.374848}
+  m_LocalPosition: {x: -6.274, y: 10.4148, z: -9.02}
+  m_LocalScale: {x: 4.6491895, y: 11.972603, z: 8.140439}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1032,6 +1032,14 @@ PrefabInstance:
     - target: {fileID: 5375409032159028227, guid: 5510b44b445ad944caae5c53e95d4715, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7886680774035381604, guid: 5510b44b445ad944caae5c53e95d4715, type: 3}
+      propertyPath: repulsiveBulletsAmmo
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7886680774035381604, guid: 5510b44b445ad944caae5c53e95d4715, type: 3}
+      propertyPath: attractiveBulletsAmmo
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

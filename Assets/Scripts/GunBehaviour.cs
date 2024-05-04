@@ -17,6 +17,22 @@ public class GunBehaviour : MonoBehaviour
     //1 = attractive, 2 = repulsive
     private int bulletType = 1;
     
+    public Material displayBlueMaterial;
+    public Material displayRedMaterial;
+    public int materialIndex = 0;
+
+    private Renderer objRenderer;
+
+    void Start()
+    {
+        objRenderer = GetComponent<Renderer>();
+
+        if (objRenderer == null || materialIndex < 0 || materialIndex >= objRenderer.materials.Length)
+        {
+            Debug.LogError("Renderer not found or material index out of bounds.");
+        }
+    }
+
     private void Update()
     {
         if (Input.GetMouseButtonDown(0))
@@ -42,6 +58,10 @@ public class GunBehaviour : MonoBehaviour
     void SwitchBulletType()
     {
         bulletType = (bulletType == 1) ? 2 : 1;
+        if (objRenderer == null) return;
+        Material[] currentMaterials = objRenderer.materials;
+        currentMaterials[materialIndex] = (bulletType == 1) ? displayBlueMaterial : displayRedMaterial;
+        objRenderer.materials = currentMaterials;
     }
 
     void Shoot()
