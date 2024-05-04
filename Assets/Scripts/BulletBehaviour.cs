@@ -8,6 +8,8 @@ public class BulletBehaviour : MonoBehaviour
     protected Vector3 target;
     protected bool hasHit = false;
 
+    public AudioSource bulletHitSound;
+
     public void SetTarget(Vector3 newTarget)
     {
         target = newTarget;
@@ -32,6 +34,7 @@ public class BulletBehaviour : MonoBehaviour
     {
         if (!hasHit)
         {
+            bulletHitSound.Play();
             hasHit = true;
             ContactPoint contact = collision.contacts[0];
             transform.position = contact.point;

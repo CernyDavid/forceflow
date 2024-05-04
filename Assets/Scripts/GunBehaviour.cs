@@ -23,6 +23,9 @@ public class GunBehaviour : MonoBehaviour
 
     private Renderer objRenderer;
 
+    public AudioSource gunshotSound;
+    public AudioSource bulletSwitchSound;
+
     void Start()
     {
         objRenderer = GetComponent<Renderer>();
@@ -57,6 +60,7 @@ public class GunBehaviour : MonoBehaviour
 
     void SwitchBulletType()
     {
+        bulletSwitchSound.Play();
         bulletType = (bulletType == 1) ? 2 : 1;
         if (objRenderer == null) return;
         Material[] currentMaterials = objRenderer.materials;
@@ -66,6 +70,7 @@ public class GunBehaviour : MonoBehaviour
 
     void Shoot()
     {
+        gunshotSound.Play();
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         Vector3 target = ray.GetPoint(maxRaycastDistance);
 
