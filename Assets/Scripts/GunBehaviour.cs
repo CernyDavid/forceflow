@@ -26,9 +26,13 @@ public class GunBehaviour : MonoBehaviour
     public AudioSource gunshotSound;
     public AudioSource bulletSwitchSound;
 
+    private Animator animator;
+
     void Start()
     {
         objRenderer = GetComponent<Renderer>();
+        animator = GetComponent<Animator>();
+        animator.ResetTrigger("Shoot");
 
         if (objRenderer == null || materialIndex < 0 || materialIndex >= objRenderer.materials.Length)
         {
@@ -71,6 +75,7 @@ public class GunBehaviour : MonoBehaviour
     void Shoot()
     {
         gunshotSound.Play();
+        animator.SetTrigger("Shoot");
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         Vector3 target = ray.GetPoint(maxRaycastDistance);
 
