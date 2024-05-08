@@ -11,6 +11,8 @@ public class PortalBehaviour : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            PlayerPrefs.SetString("LastUnlockedLevel", nextSceneName);
+            PlayerPrefs.Save();
             SceneManager.LoadScene(nextSceneName);
         }
     }
