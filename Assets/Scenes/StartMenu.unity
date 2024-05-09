@@ -1004,7 +1004,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'shoot: M1'
+  m_text: 'shoot: MB1'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: cbca66fdd4bb56c47ac77a5348e7f123, type: 2}
   m_sharedMaterial: {fileID: -9144633308376763898, guid: cbca66fdd4bb56c47ac77a5348e7f123, type: 2}
@@ -1673,7 +1673,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'sprint: shift'
+  m_text: 'back_to_menu: esc
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: cbca66fdd4bb56c47ac77a5348e7f123, type: 2}
   m_sharedMaterial: {fileID: -9144633308376763898, guid: cbca66fdd4bb56c47ac77a5348e7f123, type: 2}
@@ -1807,7 +1809,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'jump: space'
+  m_text: 'sprint: shift'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: cbca66fdd4bb56c47ac77a5348e7f123, type: 2}
   m_sharedMaterial: {fileID: -9144633308376763898, guid: cbca66fdd4bb56c47ac77a5348e7f123, type: 2}
@@ -2417,9 +2419,25 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Concept by Davyd\n\n\nDeveloped by Davyd and Hongolem\n\n\nMusic by Wee
-    Free Music\n\n\nMenu assets by pch.vector / Freepik\n\n\nSpecial thanks to Michal
-    Stehl\xEDk"
+  m_text: 'Concept by Davyd
+
+
+
+    Developed by Davyd and Hongolem
+
+
+
+    Music by
+    Wee Free Music
+
+
+
+    Menu assets by pch.vector / Freepik
+
+
+
+    Special thanks
+    to Michal Stehlik and David Krcmarik'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: cbca66fdd4bb56c47ac77a5348e7f123, type: 2}
   m_sharedMaterial: {fileID: -9144633308376763898, guid: cbca66fdd4bb56c47ac77a5348e7f123, type: 2}

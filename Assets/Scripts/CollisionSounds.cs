@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class CollisionSounds : MonoBehaviour
@@ -7,14 +6,23 @@ public class CollisionSounds : MonoBehaviour
     public AudioClip[] collisionSounds;
     private AudioSource audioSource;
 
+    private bool isReady = false;
+
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
+        StartCoroutine(DelaySoundActivation(0.5f));
+    }
+
+    IEnumerator DelaySoundActivation(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        isReady = true;
     }
 
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("MapObject") || collision.gameObject.CompareTag("MovableObject"))
+        if (isReady && (collision.gameObject.CompareTag("MapObject") || collision.gameObject.CompareTag("MovableObject")))
         {
             PlayRandomCollisionSound();
         }
