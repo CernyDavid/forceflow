@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class AttractiveBulletBehaviour : BulletBehaviour
 {
-    public float attractionForce = 9.81f;
-    public float attractionRange = 10f;
+    public float attractionForce = 30f;
+    public float attractionRange = 15f;
 
     private GameObject rangeIndicator;
     public Material indicatorMaterial;

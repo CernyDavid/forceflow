@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class RepulsiveBulletBehaviour : BulletBehaviour
 {
-    public float repulsionForce = 9.81f;
-    public float repulsionRange = 10f; //meters
+    public float repulsionForce = 15f;
+    public float repulsionRange = 15f; //meters
 
     private GameObject rangeIndicator;
     public Material indicatorMaterial;
